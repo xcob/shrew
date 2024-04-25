@@ -1,31 +1,104 @@
-# Puppeteer Boilerplate 
-![](https://img.shields.io/github/license/hellosurbhi/puppeteer-boilerplate) 
-![](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fhellosurbhi%2Fpuppeteer-boilerplate)
-<hr />
-Starter code for puppeteer projects of any complexity. 
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-**npm module coming soon!**
 
-## To use
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-On your command line
+  <h3 align="center">Shrew</h3>
 
-* Create a new directory with the name of your project ``mkdir {project-name}``
+  <p align="center">
+    A web scraper with Wordpress 
+  </p>
+</div>
 
-* Clone the repo to your local machine ``git clone {url} {project-name} ``
 
-<img src="https://github.com/hellosurbhi/puppeteer-starter-code/blob/master/clone-link-image.png" width="300" height="170">
 
-* Open project in code editor ``cd {project-name} && code . ``
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-**Note: To setup ``code .`` shortcut for VSCode on your local machine, follow** [these instructions](https://code.visualstudio.com/docs/setup/mac)
+Shrew is a web scraping project setup with MySQL database to create Wordpress sites from scraped page data.
 
-* Run ``npm install``
 
-* To confirm all is working, run ``npm run start``. It should take you to my personal portfolio.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-* Change the url in ``pageScraper.js`` to your desired link. Add your code in the same file and get scraping!
 
-## Basic Commands 
 
-* Force end scripts by pressing ``CTRL + C``
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+
+### Prerequisites
+
+You'll need the most recent stable version of NodeJS
+
+[NodeJS](https://nodejs.org/en/download/current)
+
+A package manager
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+You'll need the most recent stable version of Local WP (for your local Wordpress instance)
+
+[Local WP](https://localwp.com/)
+
+
+### Installation
+
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Install NPM packages
+   ```sh
+   npm run start
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Shrew is used to extract HTML content from Site Sucker Zip files to inject into wrapped WPBakery code and inject it into a mysql DB
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [x] Pull in any used JS files the same as CSS files
+- [ ] Figure out best way to update links
+- [ ] Figure out best way to src images
+- [ ] SFTP transfer for scraped CSS/JS
+- [ ] Rewrite sql to write SQL file, doubt I have remote DB inject from this thing
+- [ ] Refine extracted HTML content (Much later)
+- [ ] Header/Footer buildout
+- [ ] Rewrite sitemap CSV source from createReadStream to detect a csv file
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
