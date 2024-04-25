@@ -1,19 +1,10 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/xcob/shrew">
+    <img src="logo.png" alt="Logo" width="190" height="124">
   </a>
 
   <h3 align="center">Shrew</h3>
@@ -62,7 +53,7 @@ You'll need the most recent stable version of Local WP (for your local Wordpress
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/
+   git clone https://github.com/xcob/shrew
    ```
 2. Install NPM packages
    ```sh
