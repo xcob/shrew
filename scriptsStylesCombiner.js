@@ -6,7 +6,7 @@ function getAllFiles (dir, allFilesList = []){
     const files = fs.readdirSync(dir);
     files.map(file => {
       const name = dir + '/' + file;
-       // check if subdirectory is present and the dir name isn't cms/admin/blog or the file/dir contains an underscore
+       // check if subdirectory is present and the dir name doesn't contain underscores 
       if (fs.statSync(name).isDirectory() 
         && name.toString().indexOf('_') === -1
       ) {
@@ -20,6 +20,7 @@ function getAllFiles (dir, allFilesList = []){
 }
 
 const allFiles = getAllFiles(htmlPathPage);
+//filter by .css file ending
 const allCSSFiles = allFiles.filter(file => file.endsWith('.css'))
 
 //write all CSS to masterCSS file
@@ -32,9 +33,10 @@ for (let [ index, singleCSSFile ] of allCSSFiles.entries()){
 }
 
 
-//write all JS to masterJS file
+//filter by .js file ending
 const allJSFiles = allFiles.filter(file => file.endsWith('.js'))
 
+//write all JS to masterJS file
 for (let [ index, singleJSFile ] of allJSFiles.entries()){
 
     const jsFileData = fs.readFileSync(singleJSFile.toString())

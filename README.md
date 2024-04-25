@@ -59,7 +59,7 @@ You'll need the most recent stable version of Local WP (for your local Wordpress
    ```sh
    npm install
    ```
-3. Install NPM packages
+3. Run the scraper
    ```sh
    npm run start
    ```

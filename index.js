@@ -107,6 +107,19 @@ connection.connect(function(err) {
           //   console.log(imageDataSrcArray[index])
           // }
 
+              //Lots of string manipulation for temp image fixes (will be refactored)
+          //img data-src strings
+          //overwriting "0" for some reason
+          // let imageDataStringUpdate = dataHTMLString.replaceAll('[data-src="images/'|'[data-src="/images/','[data-src="/wp-content/uploads/images/');
+          // let assetDataStringUpdate = imageDataStringUpdate.replaceAll('data-src="assets/'|'data-src="/assets/', 'data-src="/wp-content/uploads/assets/');
+
+          // //img src strings
+          // let leadingSlashWithDots = dataHTMLString.replaceAll('src="../../', 'src="../');
+          // let imageSrcStringUpdate = leadingSlashWithDots.replaceAll('src="/images/'|'src="images/'|'src="../images/', 'src="/wp-content/uploads/images/');
+          // let finalStringWithUpdatedImgAssets = imageSrcStringUpdate.replaceAll('src="../assets/'|'src="assets/'|'src="/assets/', 'src="/wp-content/uploads/assets/');
+          //let finalStringWithUpdatedImgAssets = assetSrcStringUpdate.replaceAll('src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="', 'src=""');
+
+
 
             //
             // Link Src fixes
@@ -141,11 +154,11 @@ connection.connect(function(err) {
               // }
             //}
             
-           //console.log(dataHTMLString);
            
 
             //
             // Image Src fixes
+            // THESE ARE ONLY UPDATING THE ARRAY AND NOT THE MAIN CONTENT STRING
             //
             //put all image src's in array
             // let imagesFixes = await page.$$eval('img', images => {
@@ -204,18 +217,7 @@ connection.connect(function(err) {
             fs.writeFileSync("./public/js/main-inpage.js", dataInPageJSString);
             console.log("Page js added to main js file");
       
-          //Lots of string manipulation for temp image fixes (will be refactored)
-          //img data-src strings
-          //overwriting "0" for some reason
-          // let imageDataStringUpdate = dataHTMLString.replaceAll('[data-src="images/'|'[data-src="/images/','[data-src="/wp-content/uploads/images/');
-          // let assetDataStringUpdate = imageDataStringUpdate.replaceAll('data-src="assets/'|'data-src="/assets/', 'data-src="/wp-content/uploads/assets/');
-
-          // //img src strings
-          // let leadingSlashWithDots = dataHTMLString.replaceAll('src="../../', 'src="../');
-          // let imageSrcStringUpdate = leadingSlashWithDots.replaceAll('src="/images/'|'src="images/'|'src="../images/', 'src="/wp-content/uploads/images/');
-          // let finalStringWithUpdatedImgAssets = imageSrcStringUpdate.replaceAll('src="../assets/'|'src="assets/'|'src="/assets/', 'src="/wp-content/uploads/assets/');
-          //let finalStringWithUpdatedImgAssets = assetSrcStringUpdate.replaceAll('src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="', 'src=""');
-
+      
 
 
 

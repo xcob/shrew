@@ -1,5 +1,7 @@
 import fs from 'fs';
 
+
+//pathing to your file structure
 let htmlPathPage = '/Users/jacob/Downloads/www-zarelectric-net'
 
 function getAllFiles (dir, allFilesList = []){
@@ -28,6 +30,7 @@ const allFiles = getAllFiles(htmlPathPage);
 const allHTMLFiles = allFiles.filter(file => file.endsWith('.html'))
 
 
+//exporting only 1 file for testing purposes, remove array slice to get all files from dir
 export const onlyTenHTMLFiles = allHTMLFiles.slice(0, 1);
 
 //console.log(onlyTenHTMLFiles);

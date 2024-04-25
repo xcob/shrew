@@ -11,6 +11,8 @@ import fs from 'fs';
 //   });
 // });
 
+
+
 const generateRandomUA = () => {
   // Array of random user agents
   const userAgents = [
@@ -59,8 +61,6 @@ const generateRandomUA = () => {
                   await page.setUserAgent(customUA);  
 
 
-                 
-
                   //// Page await delay to hide scraping
                   const delayTime = Math.floor(Math.random() * 800) + 300;
 
@@ -81,7 +81,7 @@ const generateRandomUA = () => {
                   let fileName = fileNameDashed.substring(13, fileNameDashed.length - 2)
     
                   //write returned page html to html file
-                  //fs.appendFileSync('./webpages/'+fileName+'.html', dataHTML);
+                  fs.appendFileSync('./webpages/'+fileName+'.html', dataHTML);
                   console.log("The file was saved!");
     
                 }
