@@ -64,6 +64,16 @@ You'll need the most recent stable version of Local WP (for your local Wordpress
    npm run start
    ```
 
+MySQL connection example 
+```sh 
+  host: 'localhost',
+  user: 'root',
+  password: 'root',
+  database: 'local',
+  port: '10010',
+  socketPath: 'Found in LocalWP > Database > Socket'
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
